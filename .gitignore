@@ -1,0 +1,18 @@
+# Ignore everything in root except backend/frontend folders
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Ignore specific files
+*.tmp
+*.temp

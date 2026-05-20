@@ -1,0 +1,172 @@
+/* Import Google Font FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles - AFTER Tailwind */
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Global font override */
+* {
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif !important;
+}
+
+/* Article content specific styling */
+.prose {
+  font-family: 'Merriweather', 'Georgia', Times, serif !important;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: #223B7D !important;
+}
+
+.hover\:bg-primary:hover,
+.bg-primary:hover {
+  background-color: #1a2e63 !important;
+}
+
+.hover\:bg-indigo-700:hover,
+button:hover .hover\:bg-indigo-700 {
+  background-color: #1a2e63 !important;
+}
+
+/* Text colors */
+.text-primary {
+  color: #223B7D !important;
+}
+
+.hover\:text-primary:hover,
+.text-primary:hover {
+  color: #1a2e63 !important;
+}
+
+.hover\:text-indigo-700:hover,
+a:hover .hover\:text-indigo-700 {
+  color: #1a2e63 !important;
+}
+
+/* Border colors */
+.border-primary {
+  border-color: #223B7D !important;
+}
+
+.hover\:border-primary:hover,
+.border-primary:hover {
+  border-color: #1a2e63 !important;
+}
+
+/* Focus rings */
+.focus\:ring-primary:focus {
+  --tw-ring-color: #223B7D !important;
+}
+
+.focus\:border-primary:focus {
+  border-color: #223B7D !important;
+}
+
+.focus\:ring-indigo-500:focus {
+  --tw-ring-color: #223B7D !important;
+}
+
+/* Gradient backgrounds */
+.from-primary {
+  --tw-gradient-from: #223B7D !important;
+}
+
+.to-primary {
+  --tw-gradient-to: #223B7D !important;
+}
+
+/* Custom button hover overrides */
+button.bg-primary,
+a.bg-primary,
+.bg-primary {
+  background-color: #223B7D;
+}
+
+button.bg-primary:hover,
+a.bg-primary:hover,
+.bg-primary:hover {
+  background-color: #1a2e63 !important;
+}
+
+/* Outline button styles */
+button.border-primary,
+a.border-primary {
+  border-color: #223B7D;
+  color: #223B7D;
+}
+
+button.border-primary:hover,
+a.border-primary:hover {
+  background-color: #223B7D;
+  color: white;
+}
+
+/* Link styles */
+a.text-primary {
+  color: #223B7D;
+}
+
+a.text-primary:hover {
+  color: #1a2e63;
+}
+
+/* Loading spinner */
+.animate-spin.border-b-primary {
+  border-bottom-color: #223B7D !important;
+}
+
+/* Force login button hover to show white text */
+.border-primary.hover\:bg-primary:hover,
+.border-primary:hover {
+  background-color: #223B7D !important;
+  color: white !important;
+}
+
+/* Make sure text turns white on hover */
+.hover\:text-white:hover {
+  color: white !important;
+}
+
+/* Override any conflicting styles */
+button.border-primary:hover,
+a.border-primary:hover {
+  background-color: #223B7D !important;
+  color: white !important;
+}
