@@ -37,7 +37,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-app.options('*', cors());// For frontend connection
+
 app.use(express.json()) ;
 app.use(express.urlencoded({extended:true})); // For parsing form data
 
